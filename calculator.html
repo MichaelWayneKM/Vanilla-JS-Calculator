@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <main>
+      <div class="screen-container">
+        <input type="text" value="0" />
+      </div>
+      <div id="keyboard">
+        <button class="keyb-btn-arith">+</button>
+        <button class="keyb-btn-arith">X</button>
+        <button class="keyb-btn-arith">-</button>
+        <button class="keyb-btn-arith">/</button>
+        <button class="keyb-btn-arith">%</button>
+        <button class="keyb-btn-arith">=</button>
+
+        <button class="keyb-btn-arith num">0</button>
+        <button class="keyb-btn-arith num">1</button>
+        <button class="keyb-btn-arith num">2</button>
+        <button class="keyb-btn-arith num">3</button>
+        <button class="keyb-btn-arith num">4</button>
+        <button class="keyb-btn-arith num">5</button>
+        <button class="keyb-btn-arith num">6</button>
+        <button class="keyb-btn-arith num">7</button>
+        <button class="keyb-btn-arith num">8</button>
+        <button class="keyb-btn-arith num">9</button>
+      </div>
+    </main>
+    <script>
+
+        var total = 0;
+
+        const arithBtns = document.getElementsByClassName("keyb-btn-arith");
+
+        console.log(arithBtns)
+        
+        for (btn of arithBtns) {
+            btn.addEventListener("click", (e) => {
+                //console.log(e.target.textContent)
+            })
+        }
+
+    </script>
+  </body>
+</html>
